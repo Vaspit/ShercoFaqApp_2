@@ -1,4 +1,4 @@
-package com.example.shercofaqapp_2
+package com.example.shercofaqapp_2.ui.screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,13 +10,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.shercofaqapp_2.ui.theme.ShercoFaqApp_2Theme
+import com.example.shercofaqapp_2.ui.theme.ShercoFaqAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ShercoFaqApp_2Theme {
+            ShercoFaqAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -40,7 +40,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    ShercoFaqApp_2Theme {
+    ShercoFaqAppTheme {
         Greeting("Android")
     }
 }
